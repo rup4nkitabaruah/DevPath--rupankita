@@ -247,6 +247,43 @@
       "OWASP password guidelines: https://owasp.org"
     ],
     "starter_code": "starter_code/password_checker.py"
+  },
+  {
+    "id": 9,
+    "title": "API ETL pipeline",
+    "skills": ["Python","pandas","requests","os module"],
+    "level": "Intermediate",
+    "interest": "Data",
+    "time": "Medium",
+    "description": "Upload a API url, which then fetches data from the API, and automatically transform it into a CSV file.",
+    "features": [
+      "Fetch requests from API",
+      "handle missing values",
+      "Normalize nested JSON",
+      "Generate summary statistics",
+      "Export the processed CSV for any other Analytics projects"
+    ],
+    "tech_stack": ["Python", "pandas","requests","JSON","os module"],
+    "roadmap": [
+      "Step 1:  Install required modules via pip",
+      "Step 2:  Find a public API key for this project",
+      "Step 3:  Fetch the data from the API using requests",
+      "Step 4:  Validate the reponse you just fetched From the API",
+      "Step 5:  Normalize the nested JSON data by flattening it",
+      "Step 6:  Use the fetched data to build a pandas dataframe",
+      "Step 7:  Handle missing values or duplicate values",
+      "Step 8:  Export the cleaned datatable to a CSV format",
+      "Step 9:  Generate a summary for the newly created CSV dataset",
+      "Step 10: Test the file with atleast two different public API keys"
+    ],
+    "resources": [
+      "pandas docs: https://pandas.pydata.org/docs",
+      "requests docs: https://requests.readthedocs.io/en/latest/",
+      "JSON handling in Python: https://docs.python.org/3/library/json.html",
+      "REST API tutorial: https://restfulapi.net/",
+      "Real Python API guide: https://realpython.com/api-integration-in-python/"
+    ],
+    "starter_code": "starter_code/api_data_pipeline.py"
   }
 ]
 
