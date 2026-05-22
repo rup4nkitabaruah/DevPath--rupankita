@@ -678,17 +678,18 @@ ol {
 
 /* ---- Stats Section (Dynamic) ------------------------------ */
 .stats-section {
-  padding: 40px 0;
-  margin-top: -60px;
-  /* Overlap slightly with hero */
   position: relative;
   z-index: 10;
+  /* cleaner spacing */
+  padding: 60px 0 48px;
+  margin-top: -30px;
 }
 
 .stats-grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 24px;
+  margin-bottom: 20px;
 }
 
 .stat-card {
@@ -760,7 +761,8 @@ ol {
   }
 
   .stats-section {
-    margin-top: -40px;
+    margin-top: 0;
+    padding: 56px 0 40px;
   }
 
   .stat-card {
@@ -771,12 +773,11 @@ ol {
 @media (max-width: 768px) {
   .stats-grid {
     grid-template-columns: 1fr;
-    gap: 16px;
+    gap: 18px;
   }
 
   .stats-section {
-    margin-top: 0;
-    padding: 48px 0 24px;
+   padding: 48px 0 32px;
   }
 
   .stat-card {
@@ -803,6 +804,7 @@ ol {
 
 /* ---- Skill Strip ------------------------------------------ */
 .skill-strip {
+  margin-top: 16px;
   position: relative;
   overflow: hidden;
   background:
@@ -842,9 +844,9 @@ ol {
 .skill-strip-items {
   display: flex;
   align-items: center;
-  flex-wrap: nowrap;
-  gap: 0;
-  white-space: nowrap;
+  flex-wrap: wrap;
+  gap: 12px;
+  white-space: normal;
 }
 
 .ss-item {
